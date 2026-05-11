@@ -2,7 +2,7 @@
 
 Ovaj projekat predstavlja implementaciju sistema za automatsku klasifikaciju e-mail poruka korišćenjem tehnika mašinskog učenja i obrade prirodnog jezika (NLP). Sistem analizira sadržaj mejlova i svrstava ih u odgovarajuće kategorije, uz mogućnost određivanja prioriteta poruke.
 
-##Opis Projekta
+## Opis Projekta
 
 Cilj projekta je razvoj inteligentnog sistema koji automatski klasifikuje e-mail poruke u sledeće kategorije:
 Lično
@@ -11,18 +11,18 @@ Promocije
 Obaveštenja
 Spam
 
-##Pored same klasifikacije, sistem može da proceni način obrade poruke:
+### Pored same klasifikacije, sistem može da proceni način obrade poruke:
 Pročitati odmah
 Pročitati kasnije
 Arhivirati
 
-##Projekat koristi kombinaciju:
+### Projekat koristi kombinaciju:
 NLP tehnika
 TF-IDF reprezentacije teksta
 Ručno definisanih karakteristika
 Više modela mašinskog učenja
 
-##Korišćene Tehnologije
+### Korišćene Tehnologije
 
 Python
 Scikit-learn
@@ -32,7 +32,7 @@ Stanza
 Pandas
 NumPy
 
-##Korišćeni fajlovi
+### Korišćeni fajlovi
 
 extract.py - Skripta za ekstrakciju e-mail poruka iz .mbox fajla i konverziju u CSV format.
 preprocess.py - Modul za predobradu teksta koji obuhvata čišćenje teksta, uklanjanje linkova, uklanjanje stop reči, detekciju jezika, lematizaciju i stemovanje. Podržani jezici: srpski, engleski
