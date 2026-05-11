@@ -1,28 +1,28 @@
-# Klasifikacija poruka korišćenjem analize teksta
+# Email Message Classification Using Text Analysis
 
-Ovaj projekat predstavlja implementaciju sistema za automatsku klasifikaciju e-mail poruka korišćenjem tehnika mašinskog učenja i obrade prirodnog jezika (NLP). Sistem analizira sadržaj mejlova i svrstava ih u odgovarajuće kategorije, uz mogućnost određivanja prioriteta poruke.
+This project implements a system for automatic email message classification using Machine Learning and Natural Language Processing (NLP) techniques. The system analyzes email content and categorizes messages into appropriate classes, with the ability to determine message priority.
 
-## Opis Projekta
+## Project Description
 
-Cilj projekta je razvoj inteligentnog sistema koji automatski klasifikuje e-mail poruke u sledeće kategorije:
-- Lično
-- Poslovno
-- Promocije
-- Obaveštenja
+The goal of the project is to develop an intelligent system that automatically classifies email messages into the following categories:
+- Personal
+- Business
+- Promotions
+- Notifications
 - Spam
 
-### Pored same klasifikacije, sistem može da proceni način obrade poruke:
-- Pročitati odmah
-- Pročitati kasnije
-- Arhivirati
+### In addition to classification, the system can determine how the message should be processed:
+- Read Immediately
+- Read Later
+- Archive
 
-### Projekat koristi kombinaciju:
-- NLP tehnika
-- TF-IDF reprezentacije teksta
-- Ručno definisanih karakteristika
-- Više modela mašinskog učenja
+### The project uses a combination of:
+- NLP techniques
+- TF-IDF text representation
+- Handcrafted features
+- Multiple Machine Learning models
 
-### Korišćene Tehnologije
+### Technologies Used
 
 1. Python
 2. Scikit-learn
@@ -32,12 +32,12 @@ Cilj projekta je razvoj inteligentnog sistema koji automatski klasifikuje e-mail
 6. Pandas
 7. NumPy
 
-### Korišćeni fajlovi
+### Project Files
 
-1. extract.py - Skripta za ekstrakciju e-mail poruka iz .mbox fajla i konverziju u CSV format.
-2. preprocess.py - Modul za predobradu teksta koji obuhvata čišćenje teksta, uklanjanje linkova, uklanjanje stop reči, detekciju jezika, lematizaciju i stemovanje. Podržani jezici: srpski, engleski
-3. features.py - Implementacija pipeline-a za ekstrakciju karakteristika. Obuhvata TF-IDF nad rečima i karakterima, signalne karakteristike, numeričke karakteristike, obradu domena pošiljaoca.
-4. models.py - Sadrži implementaciju i kreiranje klasifikacionih modela: Logistic Regression, Random Forest, XGBoost, SVM, MLPClassifier
-5. train.py - Skripta za treniranje modela, validaciju, evaluaciju performansi, prikaz konfuzionih matrica.
-6. predict.py - Omogućava testiranje modela preko terminala unosom novog e-maila.
-7. Projekat VI.docx - Projektna dokumentacija sa detaljnom analizom pripreme podataka, arhitekture sistema, evaluacije modela, analiza grešaka, mogućnosti unapređenja.
+1. extract.py - Script for extracting email messages from .mbox files and converting them into CSV format.
+2. preprocess.py - Text preprocessing module including text cleaning, link removal, stop-word removal, language detection, lemmatization, and stemming. Supported languages: Serbian, English.
+3. features.py - Feature extraction pipeline implementation. Includes TF-IDF for words and characters, signal features, numerical features, and sender domain processing.
+4. models.py - Contains implementations and configurations of classification models: Logistic Regression, Random Forest, XGBoost, SVM, MLPClassifier.
+5. train.py - Script for model training, validation, performance evaluation, and confusion matrix visualization.
+6. predict.py - Allows model testing through terminal input of new email messages.
+7. Project VI.docx - Project documentation containing detailed analysis of data preparation, system architecture, model evaluation, error analysis, and possible improvements.
